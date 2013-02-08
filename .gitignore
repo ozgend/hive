@@ -1,5 +1,9 @@
+*/*/bin/
+*/*/obj/
+*/build/
 */bin/
 */gen/
 */builds/
 */build/
 */dist/
+*/*.suo

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L4D2Launcher", "L4D2Launcher\L4D2Launcher.csproj", "{A25E5556-E88E-4618-99D3-5CCF6BB12335}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A25E5556-E88E-4618-99D3-5CCF6BB12335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25E5556-E88E-4618-99D3-5CCF6BB12335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25E5556-E88E-4618-99D3-5CCF6BB12335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25E5556-E88E-4618-99D3-5CCF6BB12335}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
