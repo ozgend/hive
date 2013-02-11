@@ -13,8 +13,7 @@ namespace L4D2Launcher.Model
         //https://developer.valvesoftware.com/wiki/Category:Console_Variables
 
 
-        [CommandAlias("left4dead2.exe", true)]
-        public string Application { get; private set; }
+        public const string TargetName = "left4dead2.exe";
 
 
         //parameters

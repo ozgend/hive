@@ -12,8 +12,8 @@ namespace L4D2Launcher.Helper
         public static List<string> LoadMaps()
         {
             try
-            {
-                string filename = Path.GetFullPath(string.Format("{0}\\maps.list", Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location)));
+            {   
+                string filename = Path.GetFullPath(string.Format("{0}\\launchermaps.list", Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location)));
                 string json = File.ReadAllText(filename, Encoding.UTF8);
                 List<string> list = Deserialize<List<string>>(json);
                 return list;
