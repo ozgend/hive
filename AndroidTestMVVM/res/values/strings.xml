@@ -20,5 +20,6 @@
     <string name="btn_list_test">List Test</string>
     <string name="btn_input_test">Input Test</string>
     <string name="btn_input_fields">Input Fields</string>
+    <string name="btn_process">process</string>
 
 </resources>

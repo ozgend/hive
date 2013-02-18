@@ -16,37 +16,37 @@
             android:layout_column="0"
             android:layout_row="0"
             android:hint="@string/input_1_1"
-            binding:text="ValueInt1" />
+            binding:text="inputData.ValueInt1" />
 
         <EditText
             android:layout_column="1"
             android:layout_row="0"
             android:hint="@string/input_1_2"
-            binding:text="ValueDouble1" />
+            binding:text="inputData.ValueDbl1" />
 
         <EditText
             android:layout_column="2"
             android:layout_row="0"
             android:hint="@string/input_1_3"
-            binding:text="ValueString1" />
+            binding:text="inputData.ValueStr1" />
 
         <EditText
             android:layout_column="0"
             android:layout_row="1"
             android:hint="@string/input_2_1"
-            binding:text="ValueInt2" />
+            binding:text="inputData.ValueInt2" />
 
         <EditText
             android:layout_column="1"
             android:layout_row="1"
             android:hint="@string/input_2_2"
-            binding:text="ValueDouble2" />
+            binding:text="inputData.ValueDbl2" />
 
         <EditText
             android:layout_column="2"
             android:layout_row="1"
             android:hint="@string/input_2_3"
-            binding:text="ValueString2" />
+            binding:text="inputData.ValueStr2" />
     </GridLayout>
 
     <LinearLayout
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            binding:text="SumInt" />
+            binding:text="inputData.SumInt" />
     </LinearLayout>
 
     <LinearLayout
@@ -84,7 +84,14 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            binding:text="SumDouble" />
+            binding:text="inputData.SumDbl" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_process"
+        binding:onClick="ProcessData" />
 
 </LinearLayout>
