@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "_LoginLayout.cshtml";
+}
+
+<div id="main" class="noselect">
+
+    <div id="login-form">
+        <h2>XChange Login</h2>
+
+        <form action="@Url.Action("Process", "Login", null)">
+            <input type="text" id="name" name="name" />
+            <input type="password" id="password" name="password" />
+            <button>Login</button>
+        </form>
+    </div>
+
+</div>

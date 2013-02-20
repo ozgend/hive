@@ -6,5 +6,7 @@
 */builds/
 */build/
 */dist/
+*/packages/
+*/References/
 */*.suo
 android-binding/

@@ -1,0 +1,244 @@
+﻿* {
+    outline: none;
+}
+
+html, body {
+    font-family: 'Segoe UI';
+}
+
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+.noselect {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#main-tabs {
+    width: 100%;
+    height: 100%;
+}
+
+#panel-contacts, #panel-calendar {
+    width: 100%;
+    height: 100%;
+    padding-left: 6px;
+}
+
+#calendar-event-buttons {
+    margin-bottom: 12px;
+}
+
+    #calendar-event-buttons button {
+        font-size: 10px;
+    }
+
+#calendar-event, #calendar-view {
+    float: left;
+    height: 100%;
+}
+
+#calendar-view {
+    padding: 2px;
+    width: 80%;
+}
+
+
+#calendar-wrapper {
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 1000px;
+    margin: 0px auto;
+}
+
+#eventform-wrapper {
+    display: none;
+}
+
+#event-form-create p input[type='text'] {
+    width: 298px;
+    height: 26px;
+    padding: 2px;
+}
+
+#event-form-create p input[type='date'] {
+    width: 156px;
+    height: 22px;
+}
+
+#event-form-create p input[type='time'] {
+    width: 96px;
+    height: 22px;
+}
+
+#event-form-create p textarea {
+    width: 296px;
+    height: 296px;
+    padding: 4px;
+    resize: none;
+}
+
+#event-form-create p label {
+    display: inline-block;
+    width: 36px;
+    height: 26px;
+    padding: 2px;
+}
+
+#event-form-create p {
+    display: block;
+    margin: 6px;
+}
+
+
+#contact-person {
+    width: 20%;
+}
+
+.panel-header {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 0px;
+    margin-bottom: 6px;
+    font-family: inherit;
+}
+
+
+/* side panel & listwrapper & list */
+.sidepanel-list {
+    width: 17%;
+    margin-right: 4px;
+    padding-right: 4px;
+    border-right: 1px solid gray;
+    max-height: 640px;
+    overflow: auto;
+}
+
+.item-inactive {
+    color: #ccc;
+}
+
+    .item-inactive:hover {
+        background-color: rgba(51, 153, 255, 0.3);
+    }
+
+.item-list {
+    list-style: none;
+}
+
+    .item-list li {
+        padding: 0px;
+        padding-bottom: 4px;
+        margin-bottom: 4px;
+        border-bottom: 1px dashed gray;
+    }
+
+        .item-list li[data-past="true"], .oldevent {
+            display: none;
+            opacity: 0.3;
+        }
+
+        .item-list li[data-reqres="true"] {
+            background-color: rgba(200, 0, 0, 0.08);
+        }
+
+        .item-list li div span.listinfo-title {
+            font-weight: bold;
+        }
+
+        .item-list li div span.listinfo-small {
+            font-size: 11px;
+            padding: 4px;
+            display: inline-block;
+        }
+
+        .item-list li div {
+            padding: 4px;
+        }
+
+            .item-list li div:hover {
+                cursor: pointer;
+                background-color: rgba(51, 153, 255, 1);
+                color: white;
+            }
+
+            .item-list li div.selected {
+                color: white;
+                background-color: rgba(51, 153, 255, 1);
+            }
+
+
+/* fc-calendar override */
+.fc-today .fc-day-number {
+    font-weight: bold;
+    background-color: rgba(51, 153, 255, 0.13);
+}
+
+.fc-event:hover {
+    cursor: pointer;
+}
+
+/* jquery override */
+.ui-widget {
+    font-size: 0.8em;
+}
+
+/*apprise detail override*/
+.apprise-event-detail {
+    padding: 10px;
+    min-width: 400px;
+    max-width: 900px;
+    min-height: 200px;
+    max-height: 500px;
+    overflow-x: none;
+    overflow-y: auto;
+    word-wrap: break-word;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+
+
+/*login form*/
+#login-form {
+    width: 220px;
+    margin: 0px auto;
+    margin-top: 120px;
+}
+
+    #login-form h2 {
+        padding-top:8px;
+        padding-bottom:16px;
+        font-size: 22px;
+        font-weight: normal;
+    }
+
+    #login-form form {
+        width: 100%;
+        height: 130px;
+        display: table;
+        vertical-align: central;
+    }
+
+        #login-form form input {
+            width: 90%;
+            padding: 8px;
+            display: block;
+        }
+
+        #login-form form button {
+            display: block;
+            float: right;
+            padding: 8px;
+        }

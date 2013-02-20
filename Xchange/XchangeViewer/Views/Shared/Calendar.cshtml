@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Calendar";
+    Layout = null;
+}
+
+<div id="calendar-event" class="sidepanel-list">
+    <div id="calendar-event-buttons">
+        <button id="btn-event-all" style="display:none;">All</button>
+        <button id="btn-event-new">New</button>
+        <button id="btn-event-delete">Delete</button>
+        <button id="btn-event-refresh">Refresh</button>
+        <button id="btn-event-togglepast">T</button>
+    </div>
+    <ul id="calendar-event-list" class="item-list"></ul>
+</div>
+
+<div id="calendar-view">
+    <div id="calendar-wrapper">
+        <div id="calview"></div>
+    </div>
+    <div id="eventform-wrapper">
+        <div id="event-form-create">
+            <span class="panel-header">Create Event</span>
+            <p>
+                <input type="text" placeholder="Event title" />
+            </p>
+            <p>
+                <textarea rows="4" placeholder="Event description"></textarea>
+            </p>
+            <p>
+                <label>Start:</label>
+                <input type="date" /><input type="time" />
+            </p>
+            <p>
+                <label>End:</label>
+                <input type="date" /><input type="time" />
+            </p>
+
+        </div>
+    </div>
+</div>
