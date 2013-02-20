@@ -1,0 +1,48 @@
+[
+	{
+		"ProfileName":"DHCP",
+		"DNSList":"",
+		"Gateway":"",
+		"IpAddress":"",
+		"Subnet":"",
+		"UseDHCP":true
+	},
+
+	{
+		"ProfileName":"DHCP w/ DNS",
+		"DNSList":"192.168.1.4",
+		"Gateway":"",
+		"IpAddress":"",
+		"Subnet":"",
+		"UseDHCP":true
+	},
+
+	{
+		"ProfileName":"Firewall #2",
+		"DNSList":"192.168.1.1",
+		"Gateway":"192.168.1.1",
+		"IpAddress":"192.168.1.34",
+		"Subnet":"255.255.255.0",
+		"UseDHCP":false
+	},
+
+	{
+		"ProfileName":"Cronom Quake",
+		"DNSList":"9.9.9.9",
+		"Gateway":"9.9.9.9",
+		"IpAddress":"9.9.9.34",
+		"Subnet":"255.255.255.0",
+		"UseDHCP":false
+	},
+	
+	{
+		"ProfileName":"Cross-Lan",
+		"DNSList":"",
+		"Gateway":"",
+		"IpAddress":"88.88.88.1",
+		"Subnet":"255.0.0.0",
+		"UseDHCP":false
+	}
+
+
+]
