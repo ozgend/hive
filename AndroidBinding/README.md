@@ -1,4 +1,0 @@
-AndroidBinding
-==============
-
-MVVM for Android
