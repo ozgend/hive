@@ -1,10 +1,10 @@
 package com.cronom.mobile.androidtestmvvm.interfaces;
 
 import gueei.binding.Binder;
-import android.app.Activity;
+import gueei.binding.app.BindingActivity;
 import android.os.Bundle;
 
-public class BaseActivity extends Activity {
+public class BaseActivity extends BindingActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

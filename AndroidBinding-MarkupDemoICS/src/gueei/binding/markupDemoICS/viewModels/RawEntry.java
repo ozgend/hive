@@ -1,9 +1,9 @@
 package gueei.binding.markupDemoICS.viewModels;
 
-import android.os.Parcel;
-import android.os.Parcelable;
 import gueei.binding.observables.IntegerObservable;
 import gueei.binding.observables.StringObservable;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 public class RawEntry implements Parcelable {
 	public final StringObservable Title = new StringObservable();

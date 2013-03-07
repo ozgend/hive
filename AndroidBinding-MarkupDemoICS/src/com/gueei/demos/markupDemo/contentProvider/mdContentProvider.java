@@ -5,6 +5,8 @@ package com.gueei.demos.markupDemo.contentProvider;
  * Time: 22:04
  */
 
+import java.util.HashMap;
+
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.Context;
@@ -16,8 +18,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.text.TextUtils;
-
-import java.util.HashMap;
 
 public class mdContentProvider extends ContentProvider {
 

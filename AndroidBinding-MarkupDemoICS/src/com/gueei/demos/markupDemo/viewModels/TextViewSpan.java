@@ -1,5 +1,12 @@
 package com.gueei.demos.markupDemo.viewModels;
 
+import gueei.binding.Command;
+import gueei.binding.collections.ArrayListObservable;
+import gueei.binding.converters.HIGHLIGHT_SPAN.SpanListCreatorCommand;
+import gueei.binding.observables.SpanObservable;
+import gueei.binding.observables.SpanObservable.Span;
+import gueei.binding.observables.StringObservable;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,12 +16,6 @@ import android.text.style.ForegroundColorSpan;
 import android.text.style.StrikethroughSpan;
 import android.text.style.UnderlineSpan;
 import android.view.View;
-import gueei.binding.Command;
-import gueei.binding.collections.ArrayListObservable;
-import gueei.binding.observables.SpanObservable.Span;
-import gueei.binding.observables.StringObservable;
-import gueei.binding.observables.SpanObservable;
-import gueei.binding.converters.HIGHLIGHT_SPAN.SpanListCreatorCommand;
 
 public class TextViewSpan {
 	

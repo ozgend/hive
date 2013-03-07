@@ -1,8 +1,8 @@
 package gueei.binding.markupDemoICS.viewModels;
 
-import android.view.View;
 import gueei.binding.Command;
 import gueei.binding.observables.StringObservable;
+import android.view.View;
 
 public class Javascript {
 	public final StringObservable Script = 

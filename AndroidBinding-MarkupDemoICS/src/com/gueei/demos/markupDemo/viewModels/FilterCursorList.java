@@ -1,14 +1,17 @@
 package com.gueei.demos.markupDemo.viewModels;
 
+import gueei.binding.Observable;
+import gueei.binding.collections.TrackedCursorCollection;
+import gueei.binding.cursor.IdField;
+import gueei.binding.cursor.IntegerField;
+import gueei.binding.cursor.RowModel;
+import gueei.binding.cursor.StringField;
+import gueei.binding.observables.StringObservable;
 import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.widget.Filter;
-import gueei.binding.Observable;
-import gueei.binding.collections.TrackedCursorCollection;
-import gueei.binding.cursor.*;
-import gueei.binding.observables.StringObservable;
 
 /**
  * User: =ra=

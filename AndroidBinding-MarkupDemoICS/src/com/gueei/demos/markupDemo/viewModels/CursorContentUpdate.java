@@ -5,15 +5,19 @@ package com.gueei.demos.markupDemo.viewModels;
  * Time: 20:36
  */
 
+import gueei.binding.Command;
+import gueei.binding.collections.LazyLoadParent;
+import gueei.binding.collections.TrackedCursorCollection;
+import gueei.binding.cursor.IdField;
+import gueei.binding.cursor.IntegerField;
+import gueei.binding.cursor.LongField;
+import gueei.binding.cursor.RowModel;
+import gueei.binding.cursor.StringField;
 import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
-import gueei.binding.Command;
-import gueei.binding.collections.LazyLoadParent;
-import gueei.binding.collections.TrackedCursorCollection;
-import gueei.binding.cursor.*;
 
 public class CursorContentUpdate {
 	public TrackedCursorCollection<GroupsRowModel> Groups;

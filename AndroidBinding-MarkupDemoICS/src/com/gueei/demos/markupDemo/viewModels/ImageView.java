@@ -1,13 +1,12 @@
 package com.gueei.demos.markupDemo.viewModels;
 
 import gueei.binding.Observable;
+import gueei.binding.markupDemoICS.R;
 import gueei.binding.observables.IntegerObservable;
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-
-import gueei.binding.markupDemoICS.R;
 
 public class ImageView {
 	public IntegerObservable ImageFromResourceId = new IntegerObservable(R.drawable.ic_launcher);

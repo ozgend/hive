@@ -1,14 +1,14 @@
 package com.gueei.demos.markupDemo.viewModels;
 
-import android.view.View;
-import gueei.binding.markupDemoICS.R;
 import gueei.binding.Command;
 import gueei.binding.DependentObservable;
 import gueei.binding.collections.ArrayListObservable;
+import gueei.binding.markupDemoICS.R;
 import gueei.binding.observables.IntegerObservable;
 import gueei.binding.observables.ObjectObservable;
 import gueei.binding.viewAttributes.templates.Layout;
 import gueei.binding.viewAttributes.templates.SingleTemplateLayout;
+import android.view.View;
 
 public class SwitchableItemTemplate {
 

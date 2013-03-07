@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:binding="http://www.gueei.com/android-binding/"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center|center"
-    >
+    android:orientation="vertical" >
+
     <RatingBar
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		binding:rating="Rating"
-		binding:onRatingChanged="RatingChangedCommand"
-		/>
-	<TextView
-		android:layout_width="fill_parent"
-    	android:layout_height="wrap_content"
-    	binding:text="CONCAT('Rating Changed? ',Changed,'\tCurrent Rating: ',Rating)"
-    />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        binding:onRatingChanged="RatingChangedCommand"
+        binding:rating="Rating" />
+
+    <com.gueei.demos.markupDemo.views.DenizBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        binding:text="Garlic" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        binding:text="CONCAT(&apos;Rating Changed? &apos;,Changed,&apos;\tCurrent Rating: &apos;,Rating)" />
+
 </LinearLayout>

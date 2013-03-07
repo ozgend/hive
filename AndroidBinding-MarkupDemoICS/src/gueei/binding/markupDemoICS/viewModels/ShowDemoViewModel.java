@@ -1,9 +1,9 @@
 package gueei.binding.markupDemoICS.viewModels;
 
-import android.app.Activity;
 import gueei.binding.Observable;
 import gueei.binding.collections.ArrayListObservable;
 import gueei.binding.observables.IntegerObservable;
+import android.app.Activity;
 
 public class ShowDemoViewModel {
 	public final Observable<CharSequence> DemoName = new Observable<CharSequence>(CharSequence.class);

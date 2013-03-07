@@ -1,11 +1,12 @@
 package com.gueei.demos.markupDemo.viewModels;
 
-import java.util.ArrayList;
-
-import android.widget.Filter;
 import gueei.binding.Observable;
 import gueei.binding.collections.ArrayListObservable;
 import gueei.binding.observables.StringObservable;
+
+import java.util.ArrayList;
+
+import android.widget.Filter;
 
 public class FilterArrayList {
 	public final StringObservable FilterText = 

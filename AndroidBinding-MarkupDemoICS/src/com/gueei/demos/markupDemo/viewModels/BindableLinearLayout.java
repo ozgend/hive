@@ -1,12 +1,11 @@
 package com.gueei.demos.markupDemo.viewModels;
 
-import android.view.View;
-
 import gueei.binding.Command;
 import gueei.binding.collections.ArrayListObservable;
 import gueei.binding.markupDemoICS.R;
 import gueei.binding.observables.IntegerObservable;
 import gueei.binding.observables.StringObservable;
+import android.view.View;
 
 public class BindableLinearLayout {
 	public final ArrayListObservable<Item> Items = new ArrayListObservable<Item>(Item.class);			

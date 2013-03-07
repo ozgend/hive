@@ -9,14 +9,15 @@ import com.cronom.mobile.androidtestmvvm.model.InputFieldsViewModel;
 
 public class InputFieldsActivity extends BaseActivity {
 
-	public InputData	inputData;
+	public InputData inputData;
 	public InputFieldsViewModel inputDataViewModel;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.inputData = new InputData();
-		inputDataViewModel= new InputFieldsViewModel(inputData);
+		inputDataViewModel = new InputFieldsViewModel(inputData);
+
 		super.bind(R.layout.activity_inputfields, inputDataViewModel);
 	}
 

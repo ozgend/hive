@@ -1,8 +1,8 @@
 package gueei.binding.markupDemoICS.viewModels;
 
-import android.view.View;
 import gueei.binding.Command;
 import gueei.binding.observables.BooleanObservable;
+import android.view.View;
 
 
 public class ActionBar {
