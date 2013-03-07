@@ -9,7 +9,7 @@ using System.Web;
 
 namespace denolk.GitNotifier.Helper
 {
-    public class Data
+    internal class Data
     {
         
         public static void SendToClients()

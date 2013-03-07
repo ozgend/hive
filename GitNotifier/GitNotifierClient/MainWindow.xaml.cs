@@ -1,4 +1,5 @@
 ﻿using denolk.GitNotifierClient.Model;
+using GitNotifierClient.Helper;
 using GitNotifierClient.View;
 using Microsoft.AspNet.SignalR.Client.Hubs;
 using System;
@@ -48,7 +49,8 @@ namespace GitNotifierClient
 
         private void Connect()
         {
-            var connection = new HubConnection("http://localhost/GitNotifier/");
+            string serviceUrl = Config.GetServiceLocation();
+            var connection = new HubConnection(serviceUrl);
             connection.Credentials = CredentialCache.DefaultNetworkCredentials;
             IHubProxy chat = connection.CreateHubProxy("ClientNotificationHub");
             chat.On<Message>("Send", MessageReceived);
