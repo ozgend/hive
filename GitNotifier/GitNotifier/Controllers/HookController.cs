@@ -1,5 +1,6 @@
-﻿using denolk.GitNotifier.Hubs;
-using denolk.GitNotifierLibrary.Model;
+﻿using denolk.GitNotifier.Helper;
+using denolk.GitNotifier.Hubs;
+using denolk.GitNotifier.Model;
 using Microsoft.AspNet.SignalR;
 using Newtonsoft.Json;
 using System;
@@ -19,16 +20,17 @@ namespace denolk.GitNotifier.Controllers
         public void Notify()
         {
             bool isFormData = Request.Content.IsFormData();
-            if (!isFormData) { return; }
+            if (isFormData)
+            {
+                Data.SendToClients();
+            }
+        }
 
-            string data = HttpContext.Current.Request.Form["payload"];
-
-            GitPayload payload = JsonConvert.DeserializeObject<GitPayload>(data);
-
-            string message = string.Format("'{0}' pushed on '{1}'", payload.commits[0].author.name, payload.repository.name);
-
-            GlobalHost.ConnectionManager.GetHubContext<ClientNotificationHub>().Clients.All.Send(message);
-
+        [HttpPost]
+        [HttpGet]
+        public object Test()
+        {
+            return new { Ok = true };
         }
 
     }

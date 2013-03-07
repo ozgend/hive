@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNet.SignalR.Client.Hubs;
+﻿using denolk.GitNotifierClient.Model;
+using GitNotifierClient.View;
+using Microsoft.AspNet.SignalR.Client.Hubs;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -32,7 +35,7 @@ namespace GitNotifierClient
             InitializeComponent();
         }
 
-        private void Grid_Loaded_1(object sender, RoutedEventArgs e)
+        private void Panel_Loaded(object sender, RoutedEventArgs e)
         {
             Start();
         }
@@ -48,22 +51,38 @@ namespace GitNotifierClient
             var connection = new HubConnection("http://localhost/GitNotifier/");
             connection.Credentials = CredentialCache.DefaultNetworkCredentials;
             IHubProxy chat = connection.CreateHubProxy("ClientNotificationHub");
-            chat.On<string>("Send", MessageReceived);
+            chat.On<Message>("Send", MessageReceived);
             connection.Start().Wait();
         }
 
 
-        private void MessageReceived(string message)
+        private void MessageReceived(Message message)
         {
             try
             {
-                listSource.Add(message);
+                listNotifications.Dispatcher.BeginInvoke(new Action(delegate()
+                {
+                    CreateNotification(message);
+                }));
+
             }
             catch (Exception ex)
             {
-                Debug.WriteLine("Received= " + message);
+                Debug.WriteLine("Received= " + message.ToString());
                 Debug.WriteLine(ex.ToString());
             }
+        }
+
+        private void CreateNotification(Message message)
+        {
+            listSource.Insert(0, message.ToString());
+
+            BalloonBox balloon = new BalloonBox();
+            balloon.BalloonText = "GitHub Notification";
+            balloon.BalloonMessage = message.ToString();
+            balloon.AdditionalClickEvent = new Task(() => Process.Start(message.Url));
+
+            DNotificationIcon.ShowCustomBalloon(balloon, PopupAnimation.Slide, 6000);
 
         }
 

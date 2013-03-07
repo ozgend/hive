@@ -5,6 +5,7 @@ using System.Web;
 using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Hubs;
 using System.Threading.Tasks;
+using denolk.GitNotifier.Model;
 
 namespace denolk.GitNotifier.Hubs
 {
@@ -12,19 +13,10 @@ namespace denolk.GitNotifier.Hubs
     public class ClientNotificationHub : Hub
     {
 
-        public void Send(string message)
+        public void Send(Message message)
         {
             Clients.All.send(message);
         }
-
-
-        //public static IHubConnectionContext Clients
-        //{
-        //    get
-        //    {
-        //        return GlobalHost.ConnectionManager.GetHubContext<ClientNotificationHub>().Clients;
-        //    }
-        //}
 
         public override Task OnConnected()
         {
