@@ -14,7 +14,7 @@ namespace denolk.GitNotifierClient.Model
 
         public override string ToString()
         {
-            return string.Format("[{0}] pushed on [{1}] at {2}", Author, Repository, DateTime.Parse(Date).ToString("dddd, hh:mm:ss"));
+            return string.Format("[{0}] pushed on [{1}] at {2}", Author, Repository, Date);
         }
 
     }
